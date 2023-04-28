@@ -1,10 +1,8 @@
 import 'package:bayabasme_data_test/global_assets/global_style.dart';
-import 'package:bayabasme_data_test/page/diagnosis_area.dart';
-import 'package:bayabasme_data_test/page/diagnosis_condition.dart';
-import 'package:bayabasme_data_test/page/diagnosis_mbti.dart';
 import 'package:bayabasme_data_test/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class StepTwo extends StatefulWidget {
   const StepTwo({Key? key}) : super(key: key);
@@ -37,11 +35,7 @@ class _StepTwoState extends State<StepTwo> {
                   ),
                   Container(height: 30.h,),
                   GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => DiagnosisCondition()),);
-                    },
+                    onTap: () => context.go('/diagnosisCondition'),
                     child: TapContents(
                         img: 'images/default_diagnosis.png',
                         title: '내 두피상태 진단',
@@ -50,11 +44,7 @@ class _StepTwoState extends State<StepTwo> {
                   ),
                   Container(height: 25.h,),
                   GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => DiagnosisMbti()),);
-                    },
+                    onTap: () => context.go('/diagnosisMbti'),
                     child: TapContents(
                         img: 'images/mbti_diagnosis.png',
                         title: '탈모 MBTI',
@@ -63,12 +53,7 @@ class _StepTwoState extends State<StepTwo> {
                   ),
                   Container(height: 25.h,),
                   GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => DiagnosisArea()),
-                      );
-                    },
+                    onTap: () => context.go('/diagnosisArea'),
                     child: TapContents(
                         img: 'images/AI_diagnosis.png',
                         title: '바야바즈 두피 면적 진단',
@@ -102,11 +87,7 @@ class _StepTwoState extends State<StepTwo> {
                   ),
                   Container(height: 30.h,),
                   GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => DiagnosisCondition()),);
-                    },
+                    onTap: () => context.go('/diagnosisCondition'),
                     child: TapContents(
                         img: 'images/default_diagnosis.png',
                         title: '내 두피상태 진단',
@@ -115,11 +96,7 @@ class _StepTwoState extends State<StepTwo> {
                   ),
                   Container(height: 25.h,),
                   GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => DiagnosisMbti()),);
-                    },
+                    onTap: () => context.go('/diagnosisMbti'),
                     child: TapContents(
                         img: 'images/mbti_diagnosis.png',
                         title: '탈모 MBTI',
@@ -128,12 +105,7 @@ class _StepTwoState extends State<StepTwo> {
                   ),
                   Container(height: 25.h,),
                   GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => DiagnosisArea()),
-                      );
-                    },
+                    onTap: () => context.go('/diagnosisArea'),
                     child: TapContents(
                         img: 'images/AI_diagnosis.png',
                         title: '바야바즈 두피 면적 진단',
@@ -148,11 +120,7 @@ class _StepTwoState extends State<StepTwo> {
             children: [
               Container(height: 100,),
               GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => DiagnosisCondition()),);
-                },
+                onTap: () => context.go('/diagnosisCondition'),
                 child: Contents(
                     title: '두피 건강 테스트',
                     subtitle: '문진을 통해 유전적 요인, 생활 습관, 스트레스, 두피 타입 등을 파악하여 지금 두피의 상태가 어떤지 알아볼 수 있어요.',
@@ -164,11 +132,7 @@ class _StepTwoState extends State<StepTwo> {
               ),
               Container(height: 70,),
               GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => DiagnosisMbti()),);
-                },
+                onTap: () => context.go('/diagnosisMbti'),
                 child: Contents(
                     title: '두피 타입 테스트',
                     subtitle: '두피의 상태를 문진하여 두피 성격과 두피 타입을 파악할 수 있어요.',
@@ -180,11 +144,7 @@ class _StepTwoState extends State<StepTwo> {
               ),
               Container(height: 70,),
               GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => DiagnosisArea()),);
-                },
+                onTap: () => context.go('/diagnosisArea'),
                 child: Contents(
                     title: '두피 면적 테스트',
                     subtitle: '정수리 사진을 통해 바야바즈가 두피의 면적을 파악해줘요. 간편하고 쉽게 진단할 수 있어요.',
@@ -201,11 +161,7 @@ class _StepTwoState extends State<StepTwo> {
             children: [
               Container(height: 100,),
               GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => DiagnosisCondition()),);
-                },
+                onTap: () => context.go('/diagnosisCondition'),
                 child: Contents(
                     title: '두피 건강 테스트',
                     subtitle: '문진을 통해 유전적 요인, 생활 습관, 스트레스, 두피 타입 등을 파악하여 지금 두피의 상태가 어떤지 알아볼 수 있어요.',
@@ -217,11 +173,7 @@ class _StepTwoState extends State<StepTwo> {
               ),
               Container(height: 70,),
               GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => DiagnosisMbti()),);
-                },
+                onTap: () => context.go('/diagnosisMbti'),
                 child: Contents(
                     title: '두피 타입 테스트',
                     subtitle: '두피의 상태를 문진하여 두피 성격과 두피 타입을 파악할 수 있어요.',
@@ -233,11 +185,7 @@ class _StepTwoState extends State<StepTwo> {
               ),
               Container(height: 70,),
               GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => DiagnosisArea()),);
-                },
+                onTap: () => context.go('/diagnosisArea'),
                 child: Contents(
                     title: '두피 면적 테스트',
                     subtitle: '정수리 사진을 통해 바야바즈가 두피의 면적을 파악해줘요. 간편하고 쉽게 진단할 수 있어요.',

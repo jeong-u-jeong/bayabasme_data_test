@@ -1,14 +1,12 @@
 import 'package:bayabasme_data_test/global_assets/global_style.dart';
-import 'package:bayabasme_data_test/page/step_2_diagnosis.dart';
 import 'package:bayabasme_data_test/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class StepOne extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: Responsive(
         mobile:  SafeArea(
@@ -110,12 +108,7 @@ class StepOne extends StatelessWidget {
           ),
           Container(height: 70.h,),
           GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => StepTwo()),
-              );
-            },
+            onTap: () => context.go('/Sstep2'),
             child: Container(
               width: 200.w,
               height: 55.h,
@@ -197,12 +190,7 @@ class StepOne extends StatelessWidget {
                   height: 35,
                 ),
                 GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => StepTwo()),
-                    );
-                  },
+                  onTap: () => context.go('/Sstep2'),
                   child: Container(
                     width: 410,
                     height: 50,
@@ -287,12 +275,7 @@ class StepOne extends StatelessWidget {
                   height: 35,
                 ),
                 GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => StepTwo()),
-                    );
-                  },
+                  onTap: () => context.go('/Sstep2'),
                   child: Container(
                     width: 410,
                     height: 50,
@@ -377,12 +360,7 @@ class StepOne extends StatelessWidget {
                   height: 35,
                 ),
                 GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => StepTwo()),
-                    );
-                  },
+                  onTap: () => context.go('/Sstep2'),
                   child: Container(
                     width: 410,
                     height: 50,

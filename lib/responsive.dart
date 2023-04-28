@@ -1,9 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-double pageWidth = MediaQueryData
-    .fromWindow(WidgetsBinding.instance.window)
-    .size
-    .width;
+double pageWidth = MediaQueryData.fromWindow(WidgetsBinding.instance.window).size.width;
 
 bool isMobile = pageWidth <= 480;
 bool isTablet = pageWidth > 480 && pageWidth <= 768;
